@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>diplom</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+      <header class="header">
+        <h1 class="header__logo"><a class="header__logo_link" href="index.html">Идём<span class="header__logo_letter">в</span>кино</a></h1>
+      </header>
+  
+      <main class="main buying">
+        <section class="buying__info">
+          <div class="buying__info_movie">
+            <h2 class="buying__info_title">Название фильма</h2>
+            <p class="buying__info_start">Начало сеанса: <span class="buying__info-time">00:00</span></p> 
+            <p class="buying__info_hall">Зал</p>
+          </div>  
+  
+          <div class="buying__info_hint">
+            <img src="Sources/hint.png" alt="Тап" class="buying__info_hint-image">
+            <div class="buying__info_hint-text">Тапните дважды, чтобы увеличить</div>
+          </div>
+        </section>
+  
+        <section class="buying__scheme">
+          <div class="buying__scheme_wrapper">
+            <div class="buying__scheme_places">
+              <!-- hallConfig -->
+            </div>
+          </div>
+  
+          <div class="buying__scheme_legend">
+            <div class="buying__scheme_prices">
+              <p class="buying__scheme_legend-text"><span class="buying__scheme_legend-seat seat_standart"></span> Свободно (<span class="price_standart"></span>руб)</p>
+              <p class="buying__scheme_legend-text"><span class="buying__scheme_legend-seat seat_vip"></span> Свободно VIP (<span class="price_vip"></span>руб)</p>
+            </div>
+  
+            <div class="buying__scheme_info">
+              <p class="buying__scheme_legend-text"><span class="buying__scheme_legend-seat seat_occupied"></span> Занято</p>
+              <p class="buying__scheme_legend-text"><span class="buying__scheme_legend-seat seat_selected"></span> Выбрано</p>
+            </div>
+          </div>
+        </section>
+  
+        <button class="buying__button button buying__button_disabled">Забронировать</button>
+  
+      </main>
+    </div>
+  
+    <script src="JS/hallBuyer.js"></script>
+  </body>
+  
+  </html>
